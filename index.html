@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil Personal</title>
+
+    <!-- Conectar CSS -->
+    <link rel="stylesheet" href="css/matrix.css">
+</head>
+
+<body>
+
+    <main class="tarjeta">
+
+        <!-- Foto de presentación -->
+        <div class="foto-contenedor">
+            <img src="img/foto de curriculum.jpeg" alt="Foto de perfil de Tu Nombre">
+</div>
+        <!-- Información principal -->
+        <section class="presentacion">
+            <p class="saludo">¡bienvenidos a mi hoja de vida!</p>
+
+            <h1>José Luis Angulo Quiroz</h1>
+
+            <h2>Diseñador Web / Operador de camaras / Operador de GPS</h2>
+
+            <p class="descripcion">
+                Soy una persona apasionada por aprender cosas nuevas,
+                desarrollar proyectos y seguir creciendo tanto personal
+                como profesionalmente, actualmente me encuentro trabajando 
+                para la empresa iseg como operador de camaras
+            </p>
+        </section>
+
+        <!-- Datos personales -->
+        <section class="datos">
+            <h3>sobre mi</h3>
+
+            <div class="dato">
+                <strong>📍 Ubicación</strong>
+                <span>Lima, Perú</span>
+            </div>
+
+            <div class="dato">
+                <strong>🎂 Edad</strong>
+                <span>20 años</span>
+            </div>
+
+            <div class="dato">
+                <strong>💼 Profesión</strong>
+                <span>Diseñador Web y operador de camaras</span>
+            </div>
+
+            <div class="dato">
+                <strong>📧 Correo</strong>
+                <span>joseluisanguloquiroz2@gmail.com</span>
+            </div>
+
+            <div class="dato">
+                <strong>📱 Teléfono</strong>
+                <span>+51 952215075</span>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="habilidades">
+            <h3>Mis habilidades</h3>
+
+            <div class="etiquetas">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>CCTV</span>
+                <span>GPS</span>
+                <span>Ingles basico</span>
+            </div>
+        </section>
+<!-- Experiencia laboral -->
+<section class="experiencia-laboral">
+    <h3>Experiencia laboral</h3>
+
+    <!-- EXPERIENCIA 1 -->
+    <div class="experiencia">
+        <div class="fecha">
+            01/01/2025 - 01/02/2025
+        </div>
+
+        <div>
+            <h4>Promotor de ventas</h4>
+            <h5>MOVISTAR</h5>
+
+            <p>
+                Promoción y venta de productos y servicios,
+                atención al cliente y cumplimiento de objetivos comerciales.
+            </p>
+        </div>
+    </div>
+
+    <!-- EXPERIENCIA 2 -->
+    <div class="experiencia">
+        <div class="fecha">
+            02/02/2025 - 15/04/2025
+        </div>
+
+        <div>
+            <h4>Pintor industrial</h4>
+            <h5>Mobiliaria industrial S.A.C</h5>
+
+            <p>
+                Uso de maquinaria industrial para pintar muebles de metal
+            </p>
+        </div>
+    </div>
+    <!-- EXPERIENCIA 3 -->
+    <div class="experiencia">
+        <div class="fecha">
+            25/08/2026 - ACTUALIDAD
+        </div>
+
+        <div>
+            <h4>Operador de cámaras</h4>
+            <h5>ISEG</h5>
+
+            <p>
+                Monitoreo y supervisión mediante sistemas de videovigilancia,
+                realizando seguimiento de cámaras y reporte de incidencias.
+            </p>
+        </div>
+    </div>
+ <!-- FORMULARIO DE CONTACTO -->
+        <section class="contacto">
+
+            <h3>Contáctame</h3>
+
+            <p>
+                ¿Tienes una propuesta o proyecto?
+                Envíame un mensaje a través del siguiente formulario:
+            </p>
+
+            <form>
+
+                <div class="campo">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text"
+                           id="nombres"
+                           name="nombres"
+                           placeholder="Ej. José Luis"
+                           required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text"
+                           id="apellidos"
+                           name="apellidos"
+                           placeholder="Ej. Angulo Quiroz"
+                           required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email"
+                           id="correo"
+                           name="correo"
+                           placeholder="ejemplo@correo.com"
+                           required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel"
+                           id="telefono"
+                           name="telefono"
+                           placeholder="Ej. 952 215 075">
+                </div>
+
+                <div class="campo">
+                    <label for="motivo">Motivo o servicio de contacto:</label>
+
+                    <select id="motivo" name="motivo" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="proyecto">Propuesta de proyecto</option>
+                        <option value="trabajo">Oferta laboral</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Comentarios o Mensaje:</label>
+
+                    <textarea id="mensaje"
+                              name="mensaje"
+                              rows="6"
+                              placeholder="Escribe tu mensaje aquí..."
+                              required></textarea>
+                </div>
+
+                <button type="submit">
+                    Enviar Mensaje
+                </button>
+
+            </form>
+        </section>
+</section>
+        <!-- Redes sociales -->
+        <section class="redes">
+            <h3>Encuéntrame</h3>
+
+            <div class="botones">
+                <a href="https://www.instagram.com/joseluis13_09/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/luis.jose.217600" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/jose-luis-angulo-quiroz-0b3aa8436/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Samilamas26" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Tu Nombre. Todos los derechos reservados.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
