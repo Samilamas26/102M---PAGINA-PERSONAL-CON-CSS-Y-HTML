@@ -1,0 +1,1235 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #e9eef5;
+    color: #263445;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+   ===================================================== */
+
+.cv {
+    width: 92%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =====================================================
+   ENCABEZADO
+   ===================================================== */
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    padding: 50px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f2747,
+            #173f6b,
+            #176b87
+        );
+}
+
+
+/* =====================================================
+   FOTO
+   ===================================================== */
+
+.foto-contenedor {
+    width: 170px;
+    height: 170px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    padding: 6px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.foto-contenedor img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+
+/* =====================================================
+   INFORMACIÓN PRINCIPAL
+   ===================================================== */
+
+.saludo {
+    font-size: 16px;
+    font-weight: 500;
+    color: #b9dff0;
+
+    margin-bottom: 4px;
+}
+
+.informacion-principal h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.1;
+
+    margin-bottom: 10px;
+
+    font-weight: 800;
+}
+
+.informacion-principal h2 {
+    font-size: 19px;
+    font-weight: 500;
+
+    color: #d5edf6;
+
+    margin-bottom: 18px;
+}
+
+.descripcion {
+    max-width: 700px;
+
+    color: #e5f1f6;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   CONTENIDO
+   ===================================================== */
+
+.contenido {
+    display: grid;
+
+    grid-template-columns: 32% 68%;
+}
+
+
+/* =====================================================
+   COLUMNAS
+   ===================================================== */
+
+.columna-izquierda {
+    background: #f4f7fa;
+
+    padding: 40px 30px;
+}
+
+.columna-derecha {
+    padding: 40px 45px;
+}
+
+
+/* =====================================================
+   SECCIONES
+   ===================================================== */
+
+.seccion {
+    margin-bottom: 35px;
+}
+
+.seccion:last-child {
+    margin-bottom: 0;
+}
+
+.seccion h3 {
+    position: relative;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    color: #12385c;
+
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.seccion h3::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 45px;
+    height: 3px;
+
+    background: #1686a7;
+
+    border-radius: 5px;
+}
+
+
+/* =====================================================
+   DATOS PERSONALES
+   ===================================================== */
+
+.dato {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+
+    margin-bottom: 17px;
+}
+
+.dato strong {
+    color: #173f6b;
+
+    font-size: 13px;
+}
+
+.dato span {
+    color: #596779;
+
+    font-size: 14px;
+
+    word-break: break-word;
+}
+
+
+/* =====================================================
+   HABILIDADES
+   ===================================================== */
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.etiquetas span {
+    background: #dcecf3;
+
+    color: #14516c;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.etiquetas span:hover {
+    background: #1686a7;
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   REDES SOCIALES
+   ===================================================== */
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.redes h3 {
+    margin-bottom: 10px;
+}
+
+.redes a {
+    display: block;
+
+    padding: 9px 12px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    color: #31516e;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.redes a:hover {
+    background: #1686a7;
+    color: white;
+
+    padding-left: 17px;
+}
+
+
+/* =====================================================
+   TEXTO DEL PERFIL
+   ===================================================== */
+
+.columna-derecha p {
+    color: #596779;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   EXPERIENCIA Y EDUCACIÓN
+   ===================================================== */
+
+.experiencia,
+.educacion {
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    gap: 25px;
+
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #e2e8ef;
+}
+
+.experiencia:last-child,
+.educacion:last-child {
+    border-bottom: none;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fecha {
+    color: #1686a7;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.experiencia h4,
+.educacion h4 {
+    color: #183b5c;
+
+    font-size: 17px;
+
+    margin-bottom: 3px;
+}
+
+.experiencia h5,
+.educacion h5 {
+    color: #1686a7;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   LISTA DE CURSOS
+   ===================================================== */
+
+.lista-cursos {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.lista-cursos li {
+    position: relative;
+
+    padding: 10px 12px 10px 30px;
+
+    background: #f4f7fa;
+
+    border-radius: 7px;
+
+    color: #4f5e70;
+
+    font-size: 13px;
+}
+
+.lista-cursos li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 11px;
+
+    color: #1686a7;
+
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   PIE DE PÁGINA
+   ===================================================== */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background: #102b48;
+
+    color: #cbd9e5;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   ANIMACIONES
+   ===================================================== */
+
+.seccion {
+    animation: aparecer 0.6s ease both;
+}
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 850px) {
+
+    .cv {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .encabezado {
+        padding: 35px;
+
+        gap: 25px;
+    }
+
+    .foto-contenedor {
+        width: 135px;
+        height: 135px;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .columna-izquierda,
+    .columna-derecha {
+        padding: 35px;
+    }
+
+    .columna-izquierda {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px;
+    }
+
+    .columna-izquierda .seccion {
+        margin-bottom: 0;
+    }
+
+    .redes {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =====================================================
+   CELULARES
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        background: #ffffff;
+    }
+
+    .cv {
+        width: 100%;
+
+        margin: 0;
+
+        border-radius: 0;
+
+        box-shadow: none;
+    }
+
+    .encabezado {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 40px 22px;
+    }
+
+    .foto-contenedor {
+        width: 145px;
+        height: 145px;
+    }
+
+    .informacion-principal h1 {
+        font-size: 35px;
+    }
+
+    .informacion-principal h2 {
+        font-size: 16px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .columna-izquierda {
+        display: block;
+
+        padding: 30px 22px;
+    }
+
+    .columna-derecha {
+        padding: 30px 22px;
+    }
+
+    .columna-izquierda .seccion {
+        margin-bottom: 30px;
+    }
+
+    .experiencia,
+    .educacion {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .fecha {
+        margin-bottom: 3px;
+    }
+
+    .lista-cursos {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 18px 12px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULARES PEQUEÑOS
+   ===================================================== */
+
+@media (max-width: 380px) {
+
+    .informacion-principal h1 {
+        font-size: 30px;
+    }
+
+    .foto-contenedor {
+        width: 125px;
+        height: 125px;
+    }
+
+    .seccion h3 {
+        font-size: 17px;
+    }
+
+}html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: #e9eef5;
+}
+
+/* Tarjeta principal */
+
+.tarjeta {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==========================================
+   FOTO
+   ========================================== */
+
+.foto-contenedor {
+    width: 170px;
+    height: 170px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 5px solid #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.20);
+}
+
+.foto-contenedor img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ==========================================
+   PRESENTACIÓN
+   ========================================== */
+
+.presentacion {
+    text-align: center;
+
+    padding: 40px 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f2747,
+            #174c75,
+            #1686a7
+        );
+
+    color: white;
+}
+
+.presentacion .saludo {
+    color: #ccecf5;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.presentacion h1 {
+    font-size: 45px;
+    margin: 5px 0 10px;
+
+    color: white;
+}
+
+.presentacion h2 {
+    font-size: 19px;
+    font-weight: 500;
+
+    color: #dceff5;
+
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #edf8fb;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   DATOS PERSONALES
+   ========================================== */
+
+.datos,
+.habilidades,
+.redes {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 35px 45px;
+}
+
+.datos h3,
+.habilidades h3,
+.redes h3 {
+    text-align: center;
+
+    color: #12385c;
+
+    font-size: 21px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   DATOS
+   ========================================== */
+
+.dato {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #e3e9ef;
+}
+
+.dato strong {
+    color: #173f6b;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dato span {
+    color: #596779;
+}
+
+
+/* ==========================================
+   HABILIDADES
+   ========================================== */
+
+.etiquetas {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.etiquetas span {
+    padding: 9px 16px;
+
+    border-radius: 25px;
+
+    background: #dcecf3;
+
+    color: #14516c;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   REDES SOCIALES
+   ========================================== */
+
+.botones {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.botones a {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    background: #173f6b;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.botones a:hover {
+    background: #1686a7;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   PIE DE PÁGINA
+   ========================================== */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background: #102b48;
+
+    color: #d4e0ea;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   CELULAR
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .tarjeta {
+        width: 100%;
+
+        border-radius: 15px;
+    }
+
+    .presentacion {
+        padding: 30px 20px;
+    }
+
+    .foto-contenedor {
+        width: 130px;
+        height: 130px;
+    }
+
+    .presentacion h1 {
+        font-size: 32px;
+    }
+
+    .presentacion h2 {
+        font-size: 16px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .datos,
+    .habilidades,
+    .redes {
+        padding: 30px 20px;
+    }
+
+    .dato {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 3px;
+
+        text-align: center;
+    }
+
+    .botones a {
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    body {
+        padding: 30px 20px;
+    }
+.experiencia-laboral {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px 40px;
+
+    background: #ffffff;
+
+    border: 2px solid #8dd8f5;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.10);
+}
+
+/* Título */
+
+.experiencia-laboral h3 {
+    color: #12385c;
+    font-size: 25px;
+    font-weight: 800;
+
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #b9dff0;
+}
+
+/* Cada experiencia */
+
+.experiencia-laboral .experiencia {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+
+    gap: 25px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #cfe3ec;
+}
+
+/* Quitar línea de la última experiencia */
+
+.experiencia-laboral .experiencia:last-child {
+    border-bottom: none;
+}
+
+/* Fecha */
+
+.experiencia-laboral .fecha {
+    background: #f1f8fb;
+
+    color: #1686a7;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+/* Puesto */
+
+.experiencia-laboral h4 {
+    color: #12385c;
+
+    font-size: 21px;
+
+    margin-bottom: 5px;
+}
+
+/* Empresa */
+
+.experiencia-laboral h5 {
+    color: #1686a7;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+}
+
+/* Descripción */
+
+.experiencia-laboral p {
+    color: #596779;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+    .tarjeta {
+        max-width: 750px;
+    }
+    .experiencia-laboral {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 40px auto;
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 3px solid #1686a7;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Título */
+
+.experiencia-laboral h3 {
+    text-align: center;
+
+    color: #12385c;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid #1686a7;
+}
+
+/* Cada experiencia */
+
+.experiencia-laboral .experiencia {
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 25px;
+
+    padding: 25px 10px;
+
+    margin: 0;
+
+    border-bottom: 1px solid #dce5eb;
+}
+
+/* Última experiencia */
+
+.experiencia-laboral .experiencia:last-child {
+    border-bottom: none;
+}
+
+/* Fechas */
+
+.experiencia-laboral .fecha {
+    background: #eaf6fa;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    color: #1686a7;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+/* Puesto */
+
+.experiencia-laboral h4 {
+    color: #12385c;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+/* Empresa */
+
+.experiencia-laboral h5 {
+    color: #1686a7;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+}
+
+/* Descripción */
+
+.experiencia-laboral p {
+    color: #596779;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   EXPERIENCIA EN CELULAR
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .experiencia-laboral {
+        width: 92%;
+        padding: 20px;
+        margin: 25px auto;
+    }
+
+    .experiencia-laboral h3 {
+        font-size: 21px;
+    }
+
+    .experiencia-laboral .experiencia {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .experiencia-laboral .fecha {
+        font-size: 14px;
+    }
+
+}
+}
+/* CUADRO EXPERIENCIA LABORAL */
+
+section.experiencia-laboral {
+    width: 90% !important;
+    max-width: 1000px !important;
+    margin: 40px auto !important;
+    padding: 30px !important;
+
+    background-color: #ffffff !important;
+
+    border: 3px solid #1686a7 !important;
+    border-radius: 20px !important;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+
+    box-sizing: border-box !important;
+}
+
+section.experiencia-laboral h3 {
+    text-align: center !important;
+    color: #12385c !important;
+    font-size: 25px !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 25px !important;
+
+    padding-bottom: 15px !important;
+
+    border-bottom: 2px solid #1686a7 !important;
+}
+
+section.experiencia-laboral .experiencia {
+    display: grid !important;
+    grid-template-columns: 180px 1fr !important;
+
+    gap: 25px !important;
+
+    padding: 20px 0 !important;
+    margin: 0 !important;
+
+    border-bottom: 1px solid #dce5eb !important;
+}
+
+section.experiencia-laboral .experiencia:last-child {
+    border-bottom: none !important;
+}
+
+section.experiencia-laboral .fecha {
+    background-color: #eaf6fa !important;
+
+    color: #1686a7 !important;
+
+    padding: 15px !important;
+
+    border-radius: 10px !important;
+
+    font-size: 15px !important;
+    font-weight: bold !important;
+}
+
+section.experiencia-laboral h4 {
+    color: #12385c !important;
+    font-size: 20px !important;
+    margin: 0 0 5px 0 !important;
+}
+
+section.experiencia-laboral h5 {
+    color: #1686a7 !important;
+    font-size: 15px !important;
+    margin: 0 0 8px 0 !important;
+}
+
+section.experiencia-laboral p {
+    color: #596779 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    section.experiencia-laboral {
+        width: 92% !important;
+        padding: 20px !important;
+    }
+
+    section.experiencia-laboral .experiencia {
+        grid-template-columns: 1fr !important;
+    }
+}
